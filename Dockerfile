@@ -8,7 +8,7 @@ RUN apk update && apk upgrade && \
   apk --update add openssl ca-certificates postgresql-dev ruby ruby-json ruby-bigdecimal ruby-mysql2 && \
   gem install pg -v 0.18.4 --no-ri --no-rdoc && \
   gem install activerecord-mysql-awesome --no-ri --no-rdoc && \
-  gem install ridgepole -v 0.7.1 --no-ri --no-rdoc && \
+  gem install ridgepole -v 0.7.2 --no-ri --no-rdoc && \
   gem cleanup && \
   apk del build-dependencies && \
   rm -rf /var/cache/apk/*
